@@ -90,4 +90,9 @@ function showFriends(person) {
     showFriends(person.relative) // climbing down the ladder
 }
 
+const factorialNumber = (number) => {
+    return number === 0 ? 1 : number * factorialNumber(number - 1)
+}
+
 showFriends(personA)
+console.log(factorialNumber(6))
